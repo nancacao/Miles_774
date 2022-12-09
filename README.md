@@ -259,17 +259,17 @@ Tab:CreateToggle({
 })
 
 Tab:CreateToggle({
-	Name = "Auto Chest",
+	Name = "Auto Haki",
 	CurrentValue = false,
-	Callback = function(Value)
-		Settings.AutoChest = Value
+	Callback = function(t)
+		Settings.AutoChest = t
 	end,
 })
 local QuestSelected;
 
 Tab:CreateDropdown({
 	Name = "Select Quest",
-	Options = {"1","2","3","4","5","6","7","8","9","10","11","12"},
+	Options = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"},
 	CurrentOption = "None",
 	Callback = function(Option)
 		QuestSelected = Option
